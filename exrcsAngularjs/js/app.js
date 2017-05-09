@@ -66,4 +66,12 @@
             this.review = {};
         }
     });
+
+    app.controller('AddBookController', function(){
+        this.histo = {};
+        this.addBook = function(book){
+            historys.push(this.histo);
+            this.histo = {};
+        }
+    });
 })();

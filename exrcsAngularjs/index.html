@@ -107,6 +107,37 @@
 				<br/>
 			</div>
 		</div>
+		<h3>Agrega un libro</h3>
+		<div class="container alert-info">
+		<form name="BookForm" class="form-horizontal" ng-controller="AddBookController as bookCtrl" ng-submit="bookCtrl.addBook(book)" novalidate>
+			<div class="form-group">
+			<label>Id: </label>
+			<input placeholder="Identificador" class="form-control ng-invalid" type="text" ng-model="bookCtrl.histo.id" required/>
+			</div>
+			<div class="form-group">
+			<label>Titulo: </label>
+			<input placeholder="Titulo" class="form-control ng-invalid" type="text" ng-model="bookCtrl.histo.titulo" required/>
+			</div>
+			<div class="form-group">
+			<label>Autor: </label>
+			<input placeholder="Autor" class="form-control ng-invalid" type="text" ng-model="bookCtrl.histo.autor" required/>
+			</div>
+			<div class="form-group">
+			<label>Editorial: </label>
+			<input placeholder="Editorial" class="form-control ng-invalid" type="text" ng-model="bookCtrl.histo.editorial" required/>
+			</div>
+			<div class="form-group">
+				<label>Descripcion: </label>
+				<textarea class="form-control ng-invalid" ng-model="bookCtrl.histo.descripcion" placeholder="Agrega una descripcion del libro en esta parte" name="" id="" cols="30" rows="10" required></textarea>
+			</div>
+			<div class="text-center">
+			<input type="submit" value="Compartir" class="btn btn-primary"/>
+			</div>
+		</form>
+		</div>
+		<br/>
+		<br/>
+		<br/>
 	</div>
 	<footer class="text-center">
         <div class="footer-above">
